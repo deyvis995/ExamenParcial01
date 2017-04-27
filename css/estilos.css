@@ -1,1 +1,60 @@
 
+@font-face{
+    font-family: robotoRegular;
+    src: url(../fonts/roboto-regular-webfont.ttf);
+}
+.menu{
+    
+    font-family: robotoRegular;
+    color: white;
+    list-style: none;
+    text-decoration: none;
+}
+.titulos{
+    color: white;
+    font-family: robotoRegular;
+    font-size: 32px;
+    text-shadow: 2px 2px #000000;
+}
+form{
+    font-family: robotoRegular;
+    font-size: 15px;
+    text-align: center;
+    display: flex;
+    border: 1px;
+    box-shadow: 12px blueviolet;
+    background-color: lightgray;
+    border-radius: 5px 5px 5px 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+}
+body{
+    background-color: gray;
+}
+.tituloanim{
+    font-family: robotoRegular;
+    font-size: 10px;
+    color: greenyellow;
+    transform: rotate(0deg);
+    opacity: 0.8;
+    animation: mitextoanim 8s;
+    animation-iteration-count: infinite;
+}
+@keyframes mitextoanim {
+    0%{font-size: 10px;transform: rotate(0deg);opacity: 0.8;}
+    99%{font-size: 30px;transform: rotate(360deg);opacity: 0.8;}
+    100%{font-size: 10px;transform: rotate(0deg);opacity: 100%;}
+}
+.coment{
+    font-family: robotoRegular !important;
+    font-size: 20px;
+    color: lightgrey;
+    text-shadow: 2px 2px dark;
+    animation: mitext 2s infinite;
+}
+@keyframes mitext {
+    0%{font-size: 20px;text-shadow: 2px 2px dark;}
+    50%{font-size: 23px;text-shadow: 2px 2px white;}
+    100%{font-size: 20px;text-shadow: 2px 2px dark;}
+}

@@ -1,16 +1,26 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
+
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <link rel="icon" type="image/png" href="../imagenes/logo01.png" />
+        <title>Blog</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="../js/script.js" type="text/javascript"></script>
+        <link href="../css/estilos.css" rel="stylesheet" type="text/css"/>
     </head>
-    <body>
-        <div>TODO write content</div>
+    <body style="background-color: gray;">
+        <div class="titulos">Gracias por utilizar este software</div>
+        <input type="button" value="demo" onclick=demo(); />
+        <div>
+            <div>
+                <h1 class="coment">Seccion del Foro</h1>
+            </div>
+            <div contenteditable="true" style="border: 1px;background-color: lightgray;">
+                <textarea id="comentario" name="comentario" rows="7" cols="100" placeholder="Escribe tu comentario..."></textarea>
+                <button id="boton" onclick="comentario()">Enviar Comentario</button>
+                <input type="text" name="comentario" class="comentario" placeholder="Aqui puedes escribir tu comentario del sistema.">
+            </div>
+        </div>
     </body>
 </html>
